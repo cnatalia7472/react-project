@@ -1,0 +1,115 @@
+.btns {
+    margin-top: 20px;
+}
+
+.btn-add, .btn-remove {
+    background: #9E9E9E;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-remove {
+    background: #F44336;
+}
+
+.anim_index {
+    border-bottom: 1px solid #d4d4d4;
+    margin-bottom: 10px;
+    background: #e0e0e0;
+}
+
+.anim_index a {
+    background: #e91e63;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.showDiv {
+    background: #03a9f4;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* ====================================
+        TRANSITIONS BASIC
+=====================================*/
+
+.square {
+    background: red;
+    height: 100px;
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.square.square-entering {
+    opacity: 1;
+    transform: translateX(0%)
+}
+
+.square.square-entered {
+    background: blue;
+}
+
+.square.square-exiting {
+    background: green;
+}
+
+.square.square-exited {
+    opacity: 0;
+    transform: translateX(-100%)
+}
+
+.square.false {
+    background: #feaaa3;
+    transform: translateX(-100%);
+}
+.square.true {
+    transform: translateX(0%);
+}
+
+.square-enter.square-enter-active {
+    background: blue;
+}
+
+.square-exit.square-exit-active {
+    background: green;
+}
+
+
+/* ====================================
+        TRANSITIONS GROUP
+=====================================*/
+
+.item {
+    text-align: center;
+    background: #6187d3;
+    color: white;
+    margin: 5px 0;
+    padding: 10px;
+    height: 20px;
+}
+
+.item {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease-in;
+}
+
+.item.active,
+.item-enter.item-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.item-exit.item-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+}

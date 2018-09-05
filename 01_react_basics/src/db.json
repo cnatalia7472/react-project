@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "New ES6 upgrade available", 
+        "feed": "a"
+    }, 
+    {
+        "id": 2,
+        "title": "The importance of REACT in the develop", 
+        "feed": "ab"
+    }, 
+    {
+        "id": 3,
+        "title": "REACT developers going on strike", 
+        "feed": "abc"
+    }, 
+    {
+        "id": 4,
+        "title": "Say what again. I dare you,...mother", 
+        "feed": "abcd"
+    }
+]
