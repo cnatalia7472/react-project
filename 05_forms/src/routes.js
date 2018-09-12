@@ -9,13 +9,17 @@ import Login from "./components/login";
 import Dashboard from "./components/dashboard";
 import PrivateRoute from "./privateroute";
 
-// const PrivateRoute = (props) => {
-//     return (
-//         props.isLogged ? 
-//             <Route {...props}/>
+// const PrivateRoute = ({
+//     isLogged,
+//     component: Comp,
+//     ...rest
+// }) => {
+//     return <Route {...rest} component={(props)=>(
+//         isLogged ? 
+//             <Comp {...props}/>
 //         :
 //             <Redirect to="/login"/>
-//     )
+//     )}/>
 // }
 
 const Routes = (props) => {
