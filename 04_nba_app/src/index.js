@@ -1,25 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route,  Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-//  COMPONENT
-import Home from "./components/home";
+import Routes from './routes';
 
 const App = () => {
     return (
         <BrowserRouter>
-            <div>
-                <div className="anim_index">
-                    <Link to="/">Home</Link>
-                    <hr/>
-                </div>
-                <Route path="/" component={ Home }/>
-            </div>
+            <Routes/>
         </BrowserRouter>
     )
 }
 
-ReactDOM.render(
-    <App/>, 
-    document.querySelector('#root')
-);
+ReactDOM.render(<App/>, document.querySelector('#root'));

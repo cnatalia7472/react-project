@@ -1,0 +1,34 @@
+header {
+    height: 20px ;
+    background-color: grey ;
+    padding: 10px ;
+}
+
+a {
+    text-decoration: none ;
+    color: white ;
+    font-size: 12px ;
+    padding: 5px 10px ;
+    margin: 10px ;
+    background-color: rgb(35, 87, 230) ;
+    border-radius: 3px ;
+}
+
+label {
+    display: block ;
+}
+
+button {
+    text-decoration: none ;
+    color: white ;
+    font-size: 12px ;
+    padding: 5px 10px ;
+    margin: 10px ;
+    background-color: blue ;
+    border: none ;
+    border-radius: 3px ;
+}
+
+div.label_error {
+    color: red ;
+}
